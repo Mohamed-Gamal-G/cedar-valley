@@ -1,0 +1,1387 @@
+/* created by https://mohamed--gamal.vercel.app/ */
+/* Css decontamination to explain everything in the file start point and endpoint (pages and components)*//*
+Nav & menu start in Line: 34  and End in Line: 81
+
+home pgae start in Line: 82  and End in Line: 624
+home page sections :
+
+section1 start in Line:  82 and End in Line: 166
+section2 start in Line: 167  and End in Line: 302
+section3 start in Line: 303  and End in Line: 342
+section4 start in Line:  343 and End in Line: 420
+section5 start in Line:  421 and End in Line: 539
+section6 start in Line: 540  and End in Line: 602
+brands 603  start in Line:   and End in Line: 624
+
+thumbnails page start in Line: 625  and End in Line: 974
+Related_Swiper component in cop thumbnails page start in Line: 818  and End in Line: 974
+
+Shop page start in Line: 1283  and End in Line: 1386
+
+Our Story page start in Line: 1130  and End in Line: 1220
+
+Find Us page start in Line: 1222  and End in Line: 1282 
+
+Contact Us page start in Line: 1049  and End in Line: 1129
+Footer component start in Line: 975  and End in Line: 1048
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  background: rgba(0, 0, 0, 1);
+}
+/* Nav */
+.Nav {
+  z-index: 200;
+  padding-top: 50px;
+  background: rgba(0, 0, 0, 1);
+  font-family: Inter;
+}
+.link {
+  color: rgba(196, 174, 120, 1);
+  margin: 23px;
+  font-family: Cera Condensed Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.link.logo{
+  font-size: 42px;
+}
+.menu {
+  background: rgba(0, 0, 0, 1);
+  z-index: 200;
+  color: rgba(196, 174, 120, 1);
+}
+.Menuimg{
+  position: absolute;
+  right: 20px;
+  top:  28px;
+}
+.logoimg {
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+}
+.dropdownHover:hover .Dropdown {
+  display: flex;
+  background: rgba(0, 0, 0, 1);
+  padding: 0 25px;
+}
+.Dropdown a {
+  padding: 10px;
+}
+.logomd{
+  position: relative;
+  bottom: 20px;
+}
+/* // Nav */
+/* section1 */
+.section1{
+  background: rgba(0, 0, 0, 1);
+  background-image: url("../public/Rectangle 26.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 758px;
+  width: 100%;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+}
+.section1::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../public/IMAGE-9(1) 3.png");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  background-size: 100% 100%;
+  padding-bottom: 50px;
+  background-size: 100% 100%;
+  background-position: 0px 50px;  
+}
+.section1 h1{
+  margin-top: 24px;
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.section1 .Links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+.section1 .Links a{
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  padding: 14px 35px;
+  font-family: Colby NrBld;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  transition: .3s;
+}
+.section1 .Links a:first-child{
+  margin-right: 50px;
+}
+.section1 .Links a:hover{
+  color: #fff;
+  background: #000;
+  border-color: #646cff;
+}
+@media screen and (min-width:100px) and (max-width:888px) {
+  .section1 h1{
+    font-size: xxx-large;
+    line-height: 60px;
+    margin-top: 150px;
+  }
+  .section1 .Links{
+    flex-direction: column;
+  }
+  .section1 .Links a:first-child{
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:450px){
+  .section1 .Links a{
+    font-size: 30px;
+  }
+}
+/* // section1 */
+/* section2 */
+.section2{
+  background-image: url("../public/Rectangle 22.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  background-size: 100% 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), rgba(0, 0, 0, 0.4) url("../public/Rectangle 22.png");
+  padding-bottom: 50px;
+  background-size: 2300px 1200px;
+  background-position: 0px 50px;  
+}
+.section2 h2{
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(196, 174, 120, 1);
+}
+@media screen and (min-width:100px) and (max-width:500px){
+  .section2 h2 {
+    font-size: xxx-large;
+  }
+  .section1 .Links a{
+    padding: 10px 30px;
+    font-size: 42px;
+  }
+}
+.hwrap {
+  overflow: hidden;
+}
+.hmove { display: flex;
+}
+.hitem {
+  -webkit-text-stroke: 1.5px #c9823b;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  font-size: 8rem;
+  inset-block-end: inherit;
+  clear: both;
+  display: inline-block;
+  white-space: nowrap;
+}
+@keyframes tickerh {
+  0% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+.hmove { animation: tickerh linear 13s infinite; }
+@media screen and (min-width: 100px)and (max-width:500px) {
+  @keyframes tickerh {
+      0% { transform: translate3d(100%, 0, 0); }
+      100% { transform: translate3d(-100%, 0, 0); }
+  }
+  .hmove { animation: tickerh linear 15s infinite; }
+  }
+.section2 .watch{
+  margin: 25px;
+}
+.section2 .watch h3{
+  font-family: Cera Condensed Pro;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(196, 174, 120, 1);
+  margin-bottom: 50px;
+}
+.section2 .watch .right_side{
+  position: relative;
+}
+.section2 .watch .button-watch{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%,-40%);
+  background: rgba(217, 217, 217, 0.9);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  rotate: 90deg;
+  cursor: pointer;
+}
+  @media screen and (min-width:100px) and (max-width:1000px) {
+    .section2 .watch{
+      flex-direction: column;
+    }
+    .section2 .watch .right_side{
+      margin: 25px;
+    }
+    .section2 .watch .left_side{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width:100px) and (max-width:650px){
+    .section2 .watch .button-watch{
+      left: 35%;
+    }
+  }
+  @media screen and (min-width:100px) and (max-width:500px){
+    .section2 .watch .button-watch{
+      width: 70px;
+      height: 70px;
+    }
+  }
+.section2 .watch .left_side{
+  max-width: 50%;
+}
+.section2 .watch .right_side{
+  max-width: 50%;
+}
+.section2 .watch .right_side video{
+ width: 892px;
+ height: 544px;
+ background: #000;
+}
+@media screen and (min-width:100px) and (max-width:1000px) {
+   .section2 .watch .right_side,
+   .section2 .watch .left_side{
+    max-width: 100%;
+    margin: 0;
+  }
+  .section2 .watch .right_side video{
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+   }
+}
+  /* // section2 */
+  /* section3 */
+  .section3{
+    background-image: url("../public/BANNER-2-161d7c97.jpg");/* BANNER-2-161d7c97.jpg     Rectangle 25.png*/
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+  }
+  .section3 h4{
+    font-family: Colby NrBld;
+    font-size: 96px;
+    line-height: 95px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(0, 0, 0, 1);
+    margin: 33px  20px ;
+  }
+  @media screen and (min-width:100px) and (max-width:550px) {
+    .section3 h4{
+      font-size: 56px;
+      line-height: 55px;
+      margin: 33px  20px ;
+    }
+  }
+  .section3 .items{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+  }
+  @media screen and (min-width:100px) and (max-width:1400px) {
+    .section3 .items{
+      grid-template-columns: repeat(4,1fr);
+    }
+  }
+  @media screen and (min-width:100px) and (max-width:700px) {
+    .section3 .items{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+    /* // section3 */
+/* Start section4 */
+.section4{
+  background-image: url("../public/Rectangle 26.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 900px;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), rgba(0, 0, 0, 0.4) url("../public/Rectangle 26.png");
+  color: rgba(196, 174, 120, 1);
+  padding-bottom: 50px;
+  background-size: 2300px 1200px;
+  background-position: 0px 50px;  
+}
+.section4 h5{
+  color: rgba(196, 174, 120, 1);
+  font-weight: 700;
+  font-family: Colby NrBld;
+}
+.section4 .continer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 100px;
+}
+.section4 .continer .content .top .nam{
+  color: rgba(0, 0, 0, 1);
+  background: rgba(196, 174, 120, 1);
+  padding: 25px;
+  border-radius: 50%;
+}
+.section4 .continer .content .bottom .cart{
+  background-color: rgba(196, 174, 120, 1);
+  padding: 12px 13px;
+  border-radius: 50%;
+  display: flex;
+}
+.section4 a{
+  padding: 17px 75px;
+  background: rgba(196, 174, 120, 1);
+  color: #000;
+  border-radius: 50px;
+  font-family: Colby NrBld;
+  font-size: 52px;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-weight: 600;
+}
+@media screen and (min-width:100px) and (max-width:1300px){
+  .section4 .continer{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .section4{
+    height: 1500px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:850px){
+  .section4 .continer{
+    grid-template-columns: repeat(1,1fr);
+    gap: 100px;
+  } 
+  .section4{
+    height: 2100px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:420px){
+  .section4 h5{
+    font-size: 40px;
+  }
+  .section4 .continer .content .top .nam{
+    left: 0;
+  }
+  .section4 a{
+    padding: 7px 43px;
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+/* // section4 */
+/* section5 */
+.section5 .continer{
+  width: 100%;
+}
+.section5 .continer .left_side{
+  position: relative;
+  width: 50%;
+  background-image: url("../public/Rectangle 28.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 850px;
+  background-size: cover;
+}
+.section5 .continer .Ameen{
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  color: rgba(196, 174, 120, 1);
+  font-family: Cera Condensed Pro;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.section5 .continer .right_side{
+  width: 50%;
+  background-image: url("../public/Rectangle 49.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+}
+.section5 .continer .right_side h6{
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.section5 .continer .right_side p{
+  font-family: Cera Condensed Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 34px ;
+}
+.section5 .continer .right_side a{
+  font-family: Colby NrBld;
+  font-size: 52px;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: rgba(196, 174, 120, 1);
+  padding: 19px 75px;
+  border-radius: 50px;
+}
+@media screen and (min-width:100px) and (max-width:1480px){
+  .section5 .continer{
+    flex-direction: column;
+  }
+  .section5 .continer .left_side,
+  .section5 .continer .right_side{
+    width: 100%;
+  }
+}
+@media screen and (min-width:1000px) and (max-width:1480px){
+  .section5 .continer .left_side {
+    height: 1600px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:660px){
+  .section5 .continer .left_side {
+    height: 700px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:500px){
+  .section5 .continer .left_side {
+    height: 500px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:740px){
+  .section5 .continer .right_side h6{
+  font-size: xxx-large;
+  }
+  .section5 .continer .right_side{
+  height: 1100px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:585px){
+  .section5 .continer .right_side{
+  height: 1200px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:485px){
+  .section5 .continer .right_side{
+  height: 1300px;
+  }
+  .section5 .continer .right_side a{
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:450px){
+  .section5 .continer .right_side{
+  height: 1400px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:363px){
+  .section5 .continer .right_side{
+  height: 1500px;
+  }
+}
+/* // section5 */
+/* section6 */
+.section6{
+  width: 100%;
+  color: #fff;
+}
+.section6  .left_side{
+  width: 50%;
+  background-image: url("../public/Rectangle 49.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgba(0, 0, 0, 1);
+  padding: 50px 100px ;
+}
+.section6 .left_side h6{
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.section6 .left_side p{
+  font-family: Cera Condensed Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.section6 .left_side a{
+  font-family: Colby NrBld;
+  font-size: 52px;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: rgba(196, 174, 120, 1);
+  padding: 19px 75px;
+  border-radius: 50px;
+}
+.section6 img{
+  width: 50%;
+}
+@media screen and (min-width:100px) and (max-width:1480px){
+  .section6 {
+    flex-direction: column-reverse;
+  }
+  .section6 .left_side,
+  .section6 img{
+    width: 100%;
+  }
+}
+@media screen and (min-width:100px) and (max-width:740px){
+  .section6 .left_side h6{
+  font-size: xxx-large;
+  }
+  .section6 .left_side a{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .section6 .left_side{
+    padding: 0 0 50px 0;
+  }
+}
+/* // section6 */
+/* brands */
+.brands{
+  padding: 39px 0;
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 30px;
+  align-items: center;
+}
+@media screen and (min-width:100px) and (max-width:1000px){
+  .brands{
+    padding: 25px 5px 0 10px;
+    grid-template-columns: repeat(4,1fr);
+  }
+}
+@media screen and (min-width:100px) and (max-width:500px){
+  .brands{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+/* // brands */
+/* thumbnails  page */
+.shop{
+  background-image: url("../public/shop.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(0, 0, 0, 0.6) url("../public/Rectangle 22.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 1100px;
+  width: 100%;
+  background-size: 100% 100%;
+  clip-path: polygon(50% 0%, 100% 0, 100% 100%, 100% 90.5%, 50% 100%, 0 90.5%, 0 0);
+}
+.shop .left_side{
+  width: 50%;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after{
+  display: none;
+}
+.sweper{
+  height: 620px;
+}
+.shop{
+  color: rgba(196, 174, 120, 1);
+}
+.shop .left_side p{
+  font-family: Cera Condensed Pro;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 36px 0;
+}
+.shop .right_side{
+  margin-left: 50px;
+}
+.shop .right_side h1{
+  font-family: Cera Condensed Pro;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.shop .right_side span{
+  font-family: Cera Condensed Pro;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;  
+  margin: 20px 0;
+}
+.shop .right_side p{
+  font-family: Cera Condensed Pro;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 20px 0;
+}
+.shop .right_side .botons{
+  font-family: Colby NrBld;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 27px 0;
+}
+.shop .right_side .botons :first-child{
+  color: rgba(255, 255, 255, 1);
+  background: rgba(196, 174, 120, 1);
+  padding:   13px 41px;
+  border-radius: 15px;
+  margin-right: 13px;
+}
+.shop .right_side .botons :last-child{
+  color: rgba(255, 255, 255, 1);
+  padding:   13px 41px;
+  border: 3px solid rgba(196, 174, 120, 1);
+  border-radius: 15px;
+}
+.shop .Key-Features{
+  font-family: Cera Condensed Pro;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.shop .right_side .Contents{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.shop .right_side .Contents .Content{
+  font-family: Cera Condensed Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.shop .right_side .lastContiner{
+ color: #fff; 
+}
+.shop .right_side .lastContiner .num{
+  font-family: Colby NrBld;
+  font-size: 34px;
+  font-weight: 900;
+}
+.shop .right_side .lastContiner .num button{
+  padding: 0 18px 4px 17px;
+  border: 2px solid rgba(196, 174, 120, 1);
+  border-radius: 50%;
+}
+.shop .right_side .lastContiner h2{
+  font-family: Colby NrBld;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin:  0 35px;
+}
+.shop .right_side div .Add_Cart{
+  background: rgba(196, 174, 120, 1);
+  color: rgba(255, 255, 255, 1);
+  font-family: Colby NrBld;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 20px;
+}
+@media screen and (min-width:1310px) and (max-width:1500px) {
+  .shop .left_side{
+    width: 43%;
+  }
+}
+@media screen and (min-width:100px) and (max-width:1500px) {
+  .shop .left_side{
+    width: 100%;
+  }
+  .shop{
+    flex-direction: column;
+    height: 2000px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:770px){
+  .shop .right_side .Contents{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+  .shop .right_side {
+    margin-left: 25px;
+}
+.shop{
+  height: 2300px;
+}
+}
+@media screen and (min-width:100px) and (max-width:600px){
+  .shop .right_side .Contents{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+  .shop .right_side div .Add_Cart{
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:533px){
+  .shop .right_side .botons{
+    display: flex;
+    flex-direction: column;
+  }
+  .shop .right_side .botons{
+    text-align: center;
+  }
+  .shop .right_side .botons :first-child{
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .shop .right_side .continerlastContiner{
+    display: flex;
+    flex-direction: column;
+  }
+  .shop .right_side div .Add_Cart{
+    margin-top: 20px;
+  }
+}
+
+/* Related-Products */
+.Related-Products{
+  margin-top: -150px;
+  background-image: url("../public/Rectangle 49.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 867px;
+  width: 100%;
+  background-size: 100% 100%;
+  padding: 0 100px;
+}
+.Related-Products h2{
+  padding-top: 150px;
+  font-family: Colby NrBld;
+  font-size: 64px;
+  line-height: 75px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
+.shop-swiper2 .continer .Buy{
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+  color: white;
+  text-align: center;
+  font-family: Cera Condensed Pro;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0em;
+  padding: 5px;
+  border-radius: 20px;
+}
+.shop-swiper2 .swiper .continer{
+  width: 320px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+}
+.shop-swiper2 .continer h3{
+  font-family: Colby NrBld;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin:5px 0 10px 0;
+}
+.shop-swiper2 .continer .stars{
+  margin-bottom: 10px;
+}
+@media screen and (min-width:100px) and (max-width:700px){
+  .Related-Products{
+    padding: 0 25px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:700px){
+  .Related-Products h2{
+    font-size: xxx-large;
+  }
+}
+@media screen and (min-width:100px) and (max-width:400px){
+  .Related-Products h2{
+    font-size: xx-large;
+  }
+  .shop{
+    height: 2500px;
+  }
+}
+.Reviews{
+  background: #fff;
+  padding: 50px 130px;
+}
+.Reviews .left_side{
+  max-width: 350px;
+}
+.Reviews .left_side .rates .rate .progress{
+  border: 2px solid rgba(196, 174, 120, 1);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.Reviews .left_side .rates .rate .progress .prog{
+  width: 102%;
+  margin-left: -1%;
+}
+.Reviews .left_side .rates .rate .progress .prog2{
+  margin-left: -1%;
+}
+.Reviews .left_side .rates .rate .progress .content{
+  height: 23px;
+  background-color: rgba(196, 174, 120, 1);
+  border-radius: 5px;
+}
+.Reviews .left_side .line{
+  height: 2px;
+  background: #000;
+  margin: 25px 0 25px -25px;
+}
+.Reviews{
+  color: rgba(0, 0, 0, 1);
+}
+.Reviews .left_side .continer h3{
+  font-family: Colby NrBld;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 900;
+}
+.Reviews .left_side .continer .ReviewProduct h4{
+  font-family: Colby NrBld;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-weight: 900;
+}
+.Reviews .left_side .continer .ReviewProduct a{
+  font-family: Cera Condensed Pro;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: 2px solid rgba(0, 0, 0, 1);
+  padding: 8px 67px;
+  border-radius: 10px;
+  text-align: center;
+}
+.Reviews .right_side{
+  max-width: 800px;
+}
+@media screen and (min-width:100px) and (max-width:1530px) {
+  .Reviews{
+    padding: 50px;
+  }
+  .Reviews .left_side .continer .ReviewProduct a{
+    padding: 8px 30px
+  }
+  .Reviews .right_side{
+    max-width: 600px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:1100px){
+.Reviews .right_side{
+    margin-left: 25px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:970px){
+.Reviews {
+    flex-direction: column;
+  }
+  .Reviews .right_side{
+    margin: 50px 0 0 0;
+  }
+}
+/* Footer */
+footer{
+  background: rgba(0, 0, 0, 1);
+  padding-bottom: 50px;
+ 
+}
+footer .continer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  color: rgba(196, 174, 120, 1);
+  margin: 50px 70px 25px 70px ;
+  border-bottom: 2px solid rgba(196, 174, 120, 1);
+  padding-bottom: 40px;
+}
+footer .continer a{
+  font-family: Cera Condensed Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 10px 0;
+}
+footer .continer a:first-child{
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 900;
+}
+.logoFooter{
+  font-size: 42px;
+}
+footer .continer .emailcintiner input{
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #000;
+  color: rgba(196, 174, 120, 1);
+  border: 1px solid rgba(196, 174, 120, 1);
+  outline: none;
+}
+footer .continer .emailcintiner input::placeholder{
+  color: rgba(196, 174, 120, 1);
+}
+footer .continer .emailcintiner .Join{
+  color: #000;
+  background: rgba(196, 174, 120, 1);
+  font-family: Cera Condensed Pro;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  display: inline-grid;
+  padding:  10px 39px;
+  border-radius: 10px;
+}
+footer .copyright{
+  margin: 0 70px;
+}
+footer .copyright .left_side{
+  color: rgba(196, 174, 120, 1);
+}
+@media screen and (min-width:100px) and (max-width:1220px) {
+  footer .continer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (min-width:100px) and (max-width:700px) {
+  footer .continer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin: 50px 30px 25px 30px;
+  }
+}
+/* End Footer */
+/* Start ContactUs */
+.ContactUs h1{
+  color: rgba(196, 174, 120, 1);
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ContactUs p{
+  font-family: Cera Condensed Pro;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(196, 174, 120, 1);
+}
+.ContactUs form input{
+  height: 44px;
+  margin-bottom: 24px;
+  padding: 12px;
+  outline: none;
+}
+.ContactUs form input::placeholder{
+  color: rgba(51, 51, 51, 1)
+}
+.ContactUs form a{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(196, 174, 120, 1);
+  padding: 10px 20px;
+  border-radius: 3px;
+  max-width: 152.28px;
+  text-align: center;
+}
+.ContactUs .continer .right_side p{
+  color: #fff;
+  font-family: Cera Condensed Pro;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ContactUs .continer .right_side .Contact .content{
+  color: #fff;
+}
+@media screen and (min-width:100px) and (max-width:1500px){
+  .ContactUs{
+    margin: 25px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:1100px){
+  .ContactUs .continer{
+    flex-direction: column;
+  }
+  .ContactUs .continer .right_side {
+    margin: 50px 0;
+  }
+  .ContactUs form .name{
+    flex-direction: column;
+  }
+  .ContactUs form .name .FirstName{
+    margin-right: 0;
+  }
+}
+@media screen and (min-width:100px) and (max-width:600px){
+  .ContactUs h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .ContactUs p{
+    font-size: 25px;
+    line-height: 35px;
+  }
+}
+.OurStory{
+  background-image: url("../public/Rectangle 22.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  background-size: 100% 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(0, 0, 0, 0.6) url("../public/Rectangle 22.png");
+  padding-bottom: 50px;
+  background-size: 2300px 1200px;
+  background-position: 0px 50px;  
+}
+.OurStory .continer .section5 .continer .right_side{
+  background-image: none;
+  color: #fff;
+  height: auto;
+}
+.OurStory  h1{
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(196, 174, 120, 1);
+}
+@media screen and (min-width:100px) and (max-width:500px){
+  .OurStory  h1{
+    font-size: 60px;
+    line-height: 40px;
+  }
+}
+.OurStory .Journey{
+  color: rgba(255, 255, 255, 1);
+}
+.OurStory .Journey h2{
+  font-family: Colby CdBld;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(196, 174, 120, 1);
+}
+@media screen and (min-width:100px) and (max-width:700px){
+  .OurStory .Journey h2{
+    font-size: 60px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:600px){
+  .OurStory .Journey h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:400px){
+  .OurStory .Journey h2{
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+.OurStory .Journey .swiper .continer p{
+  max-width: 418px;
+}
+.OurStory .Journey .swiper .continer .ImgContiner{
+  border: 15px solid rgba(196, 174, 120, 1);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.OurStory .Journey .swiper .continer .ImgContiner .sercl{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background: rgba(196, 174, 120, 1);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  bottom: -38px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.OurStory .Journey .container {
+  position: relative;
+}
+.OurStory .Journey .container .line{
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  height: 10px;
+  top: 100px;
+}
+.OurStory .Journey .container p{
+  text-align: center;
+}
+/* End ContactUs */
+/* Start Find Us  */
+.FindUs{
+  color: rgba(196, 174, 120, 1);
+  background-image: url("../public/Rectangle 22.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  background-size: 100% 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(0, 0, 0, 0.6) url("../public/Rectangle 22.png");
+  padding-bottom: 50px;
+  background-size: 2300px 1200px;
+  background-position: 0px 50px;  
+}
+.FindUs h1{
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.FindUs p{
+  font-family: Cera Condensed Pro;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.FindUs iframe{
+  width: 90%;
+  height: 600px;
+  margin: 37px 0;
+}
+.FindUs .following-stores{
+  background-image: url("../public/Rectangle 87.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  background-size: 100% 100%;
+ /*  text-align: center; */
+}
+.FindUs .following-stores h2{
+  font-family: Colby CdBld;
+  font-size: 72px;
+  line-height: 84px;
+  letter-spacing: 0em;
+  text-align:center;
+  color: rgba(0, 0, 0, 1);
+}
+@media screen and (min-width:100px) and (max-width:1000px){
+  .FindUs h1{
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .FindUs p{
+    font-size: 33px;
+    line-height: 45px;
+    text-align: center;
+  }
+}
+/* End Find Us */
+/* Shop */
+.shops{
+  background-image: url("../public/Rectangle 22.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  width: 100%;
+  background-size: 100% 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), rgba(0, 0, 0, 0.6) url("../public/Rectangle 22.png");
+  padding-bottom: 50px;
+  /* background-position: -10 -100px; */
+  background-size: 2300px 1200px;
+  background-position: 0px 50px;  
+}
+.shops h1{
+  font-family: Colby NrBld;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(196, 174, 120, 1);
+  margin-top: 45px;
+}
+.shops .SortBy{
+  color: rgba(196, 174, 120, 1);
+  font-family: Cera Condensed Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-left: 100px;
+}
+.shops .SortBy select{
+  background: #000;
+  color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(196, 174, 120, 1);
+  border-radius: 15px;
+  font-family: Cera Condensed Pro;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 8px 85px 8px 15px;
+  margin-top: 8px;
+}
+.shops .items .continer{
+  background: rgba(255, 255, 255, 1);
+  max-width: 375px;
+  border-radius: 10px;
+  color: #000;
+  padding: 26px;
+}
+.shops .items .continer img{
+  border-radius: 10px;
+}
+.shops .items .continer .Buy{
+  font-family: Cera Condensed Pro;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 0, 0, 1);
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.shops .items{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(3,1fr);
+  margin: 50px 100px;
+}
+@media screen and (min-width:100px) and (max-width:1100px){
+  .shops .items{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+@media screen and (min-width:100px) and (max-width:1000px){
+  .shops .items{
+    grid-template-columns: repeat(2,1fr);
+
+  }
+}
+@media screen and (min-width:100px) and (max-width:700px){
+  .shops .items{
+    grid-template-columns: repeat(1,1fr);
+    margin: 50px 30px;
+  }
+  .shops .SortBy{
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width:100px) and (max-width:500px){
+  .shops h1{
+    font-size: 70px;
+    line-height: 49px;
+    margin-bottom: 30px;
+  }
+}
+/* // Shop */
+/* created by https://mohamed--gamal.vercel.app/ */
